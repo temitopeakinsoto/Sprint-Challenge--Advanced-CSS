@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4.5rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -172,7 +175,7 @@ p {
   display: flex;
   flex: 1;
   flex-direction: row;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin: 1rem 0;
 }
 .nav-bar .nav-links .nav-item {
