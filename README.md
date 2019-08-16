@@ -33,16 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+ANS: Response web page adjusts or re-sizes itself to fit the size of the screen through which it is being displayed, no matter what the device screen size is. One css is being used for all screen sizes. WHILE the responsive design combines the fixed,fluid and responsive design styles and uses CSS media queries to apply custom css styles to each device size,enabling the webpage to render appropriately accross different screen sizes 
 
 2. Describe what it means to be mobile first vs desktop first.
 
+ANS: Mobile first design is a design strategy in which a front-end engr designs a web app for the smallest mobile devices possible and then scale upwards to adapt to desktop computers. Desktop first design approach on the other hand, is an approach in which a designer a web app for desktop view primarily and then scales down to adjust to mobile screens.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+ANS: The default font-size of an html document is 16px. A Font-size of 62.5% converts the root font-size of an html page to 10px(0.625*16=10px),  making it easier to calculate rem values which are relative to the root font-size of 10px. so if I wish to add a padding of 20px to a button, for example, i simply convert it to relative unit of 2rem
 
 4. How would you describe preprocessing to someone new to CSS?
+ANS: I would say "Preprocessing in CSS is simply a way of adding extra functionalities/features to css, making makeing the usage of CSS easier and more efficient. A CSS Preprocessor is a program that works by compiling the code which is written using a special compiler, and then uses that to create a css file, which can then be refereneced by the main HTML document. Some of the extra features available in preprocessors(but not available in plain css) include: mixins, variables, Nestings etc. All of these features make it possible to produce clean, maintainable and reuseable css code."
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+ANS: My favourite concept in preprocessing is MIXINS. And the concept that gives me the most trouble in preprocessing is NESTIN especially at media query sizes
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+
 
 ## Project Set Up
 
