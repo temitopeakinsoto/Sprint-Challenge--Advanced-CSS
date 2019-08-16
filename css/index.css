@@ -175,6 +175,14 @@ p {
   padding: 2.5rem 0;
   flex: 1;
 }
+@media (max-width: 503px) {
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    background-color: #454A59;
+    opacity: 1;
+  }
+}
 .nav-bar .nav-links {
   display: flex;
   flex: 1;
@@ -197,11 +205,21 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  width: 100%;
+  padding: 0 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .header-image {
+  width: 100%;
+}
+.home .intro .banner-image {
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -214,7 +232,7 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 503px) {
   .home .space-images {
     flex-direction: column;
   }
@@ -224,6 +242,9 @@ footer {
   }
   .home .space-images img {
     width: 100%;
+  }
+  .home .space-images img.blast {
+    width: 95%;
   }
 }
 .home .visit-planets {
@@ -241,6 +262,12 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 503px) {
+  .home .walk {
+    padding: 5px 5px;
+    width: 95%;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -262,6 +289,19 @@ footer {
   font-size: 2rem;
   width: 30%;
 }
+@media (max-width: 503px) {
+  .home .walk .walk-text .btn {
+    margin: 1em 0;
+    padding: 0.3em;
+    color: #F6F7F8;
+    background-color: #22283A;
+    border: 0.1em solid #dee2e6;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 2rem;
+    width: 90%;
+  }
+}
 .home .walk .walk-text .btn:hover {
   margin: 1em 0;
   padding: 0.3em;
@@ -282,10 +322,11 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 503px) {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
+    width: 95%;
   }
   .home .walk .walk-img {
     width: 100%;
@@ -296,9 +337,24 @@ footer {
     padding: 0.2rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 503px) and (max-width: 503px) {
+  .home .walk .walk-text {
+    width: 95%;
+    padding: 0.2rem;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 503px) {
   .home {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 503px) {
+  .home .header-image {
+    width: 100%;
+  }
+  .home .banner-image {
+    width: 100%;
   }
 }
