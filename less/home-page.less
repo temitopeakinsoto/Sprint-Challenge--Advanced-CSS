@@ -1,6 +1,8 @@
 // Home Content
 
 .home {
+  width: 100%;
+  padding: 0 10px;
 
   .intro {
 
@@ -11,8 +13,15 @@
     p {
       padding:0 15px;
     }
+    .header-image{
+      width: 100%;
+    }
+    .banner-image{
+      width: 100%;
+    }
+   
   
-  }
+  }  
 
   .space-images {
     display: flex;
@@ -24,6 +33,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @mobile{
+      flex-direction: column;
+      .sky,.launch{
+        display: none;
+      }
+      img{
+        width: 100%;
+      }
+      img.blast{
+        width: 95%;
+      }
+
     }
   }
 
@@ -45,6 +67,10 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      padding: 5px 5px;
+      width: 95%;
+    }
 
     .walk-text {
       width: 50%;
@@ -58,18 +84,56 @@
       }
 
       .btn {
+        .sign-up-button(@btn-bg-color,@porcelain,30%);
+        @media @mobile{
+          .sign-up-button(@btn-bg-color,@porcelain,90%);
+        }
+      }
+      .btn:hover{
+        .sign-up-button(@porcelain, @btn-bg-color, 30%); 
       }
     }
 
     .walk-img {
       width: 46%;
-      margin-left: 4%;
-      
+      margin-left: 4%;      
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 10px;      
+        
       }
     }
+    @media @mobile{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 95%;
+      .walk-img {
+        width: 100%;
+        padding: 0.2rem;
+      }
+      .walk-text{
+        width: 80%;
+        padding: 0.2rem;
+        @media @mobile{
+          width: 95%;
+          padding: 0.2rem;
+          margin: 1rem 0;
+        }
+      }      
+    }
+  }
+  @media @mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  @media @mobile{
+    .header-image{
+      width: 100%;
+    }
+    .banner-image{
+      width: 100%;
+    }
+    
   }
 }// home
